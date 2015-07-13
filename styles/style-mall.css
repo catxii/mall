@@ -124,7 +124,25 @@
 .green-color {
   color: green;
 }
-.table {
-  margin: 20px;
-  width: auto;
+.gray-color {
+  color: #ccc;
+}
+.green-bg {
+  background: green;
+  color: white;
+}
+.red-color {
+  color: red;
+}
+.red-bg {
+  background: red;
+  color: white;
+}
+.btn-round {
+  padding: 1px 5px;
+  border-radius: 10px;
+}
+.gray-bg {
+  background: #ccc;
+  color: #fff;
 }

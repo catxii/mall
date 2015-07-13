@@ -146,3 +146,7 @@
   background: #ccc;
   color: #fff;
 }
+.position-left {
+  position: absolute;
+  left: 10px;
+}

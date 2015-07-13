@@ -1,0 +1,133 @@
+ .user-info {
+ 	padding:100px 0px;
+ 	text-align: center;
+ 	li {
+		line-height: 30px;
+		color: white;
+		font-size: 14px;
+		.orange-color {
+			color: #ff9800;
+		}
+		.gray-color {
+			color: white;
+			opacity: 1;
+		}
+ 	}
+ }
+.count-ul {
+  border:1px solid #e0e0e0;
+  display: inline-block;
+  border-radius: 6px;
+  width: 92px;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  white-space: nowrap;
+  li{
+    float: left;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 30px!important;
+    &:hover {
+      background:#f0f0f0;
+    }
+    &.minus,&.plus {
+      padding-bottom: 0px;
+    }
+    &.count {
+      border-right: 1px solid #e0e0e0;
+      border-left: 1px solid #e0e0e0;
+      input {
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        line-height: 30px;
+        height: 30px;
+        display: block;
+        padding: 0;
+      }
+    }
+    
+  }
+}
+.input-noborder {
+  border:none;
+}
+.inline-block-ul {
+	li {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.cp-list {
+	padding: 10px;
+}
+.single-cp {
+	width: 27%;
+	position: relative;
+	padding: 10px 0;
+	padding-left:23%;
+	margin-bottom: 0px;
+	float: left;
+	height: 100px;
+	.cp-pic {
+		width: 40%;
+		height: 100px;
+		position: absolute;
+		left: 10px;
+		top: 10px;
+	}
+	.name {
+		font-size: 16px;
+		margin-bottom: 5px;
+		line-height: 30px;
+	}
+	.cp-info {
+		color: #999;
+		margin-bottom: 15px;
+	}
+	.price {
+		font-size: 24px;
+		color: red;
+	}
+	.inline-block-ul {
+		li {
+			margin-right: 20px;
+		}
+	}
+}
+
+.clearfix:after,.clearfix:before{
+	display:table;
+	content:"";
+	line-height:0;
+}
+.clearfix:after{
+	clear:both;
+}
+
+
+.position-fix-bottom-bar {
+	position: fixed;
+	bottom: 0;
+	width: 77%;
+	right: 0;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.3);
+	padding:10px 0;
+	.button.blue {
+		box-shadow: none!important;
+		margin:0 10px;
+	}
+}
+.white-color {
+	color: white;
+}
+.green-color {
+	color: green;
+}

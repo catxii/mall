@@ -1,1 +1,0 @@
-define(["jquery"],function(e){var t={};return t.setListDelete=function(){},t});

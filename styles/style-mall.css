@@ -124,3 +124,7 @@
 .green-color {
   color: green;
 }
+.table {
+  margin: 20px;
+  width: auto;
+}

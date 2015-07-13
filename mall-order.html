@@ -24,7 +24,7 @@
 			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
 		</div>
 		<div class="breadcrumbs_container">
-			<article class="breadcrumbs"><a href="index.html">云包公首页</a><div class="breadcrumb_divider"></div><a class="current">商城首页</a></article>
+			<article class="breadcrumbs"><a href="index.html">云包公首页</a><div class="breadcrumb_divider"></div><a class="current">我的订单</a></article>
 		</div>
 	</section><!-- end of secondary bar -->
 	<aside id="sidebar" class="column">
@@ -46,76 +46,131 @@
 		</footer>
 	</aside><!-- end of sidebar -->
 	<section id="main" class="column main_shadow">
-		<h4 class="alert_info">请输入商品数量，点击底部购买按钮提交订单.</h4>
-		<article class="module width_full">
-			<header><h3>商品列表</h3></header>
-			<div class="cp-list clearfix">
+		<h4 class="alert_info">感谢使用云包公电商平台，在使用中遇到任何问题，可来电云包公客服 0731—XXXXXX</h4>
+		<article class="module table">
+			<header><h3 class="tabs_involved">订单列表</h3>
+			</header>
+
+			<div class="tab_container">
+				<div id="tab1" class="tab_content">
+					<table class="tablesorter" cellspacing="0"> 
+					<thead> 
+						<tr> 
+							<th>订单编号</th> 
+							<th>下单时间</th> 
+							<th>订单状态</th> 
+							<th>订单总额</th> 
+							<th>可用操作</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr> 
+							<td>1281003784611</td> 
+							<td>2015-12-12 12:00:00</td> 
+							<td>等待备货</td> 
+							<td>￥1011</td> 
+							<td><a href="#">查看</a></td> 
+						</tr> 
+						<tr> 
+							<td>1281003784611</td> 
+							<td>2015-12-12 12:00:00</td> 
+							<td>等待备货</td> 
+							<td>￥1011</td> 
+							<td><a href="#">查看</a></td> 
+						</tr> 
+						<tr> 
+							<td>1281003784611</td> 
+							<td>2015-12-12 12:00:00</td> 
+							<td>等待备货</td> 
+							<td>￥1011</td> 
+							<td><a href="#">查看</a></td> 
+						</tr> 
+						<tr> 
+							<td>1281003784611</td> 
+							<td>2015-12-12 12:00:00</td> 
+							<td>等待备货</td> 
+							<td>￥1011</td> 
+							<td><a href="#">查看</a></td> 
+						</tr> 
+						<tr> 
+							<td>1281003784611</td> 
+							<td>2015-12-12 12:00:00</td> 
+							<td>等待备货</td> 
+							<td>￥1011</td> 
+							<td><a href="#">查看</a></td> 
+						</tr> 
+						<tr> 
+							<td>1281003784611</td> 
+							<td>2015-12-12 12:00:00</td> 
+							<td>等待备货</td> 
+							<td>￥1011</td> 
+							<td><a href="#">查看</a></td> 
+						</tr> 
+						<tr> 
+							<td>1281003784611</td> 
+							<td>2015-12-12 12:00:00</td> 
+							<td>等待备货</td> 
+							<td>￥1011</td> 
+							<td><a href="#">查看</a></td> 
+						</tr> 
+
+					</tbody> 
+					</table>
+				</div><!-- end of #tab1 -->
 				
-				<div class="single-cp">
-					<img src="images/shazi.jpg" class="cp-pic">
-					<h4 class="name">沙子名称</h4>
-					<ul class="inline-block-ul gray cp-info">
-						<li>规格：吨</li>
-						<li>品牌：山河</li>
-					</ul>
-					<h5 class="price">￥ 10</h5>
-					<ul class="clearfix count-ul">
-		              <li class="minus">-</li>
-		              <li class="count"><input type="tel" value="0" class="input-noborder" ng-model="exp"></li>
-		              <li class="plus">+</li>
-		          </ul>
-				</div>
+				<div id="tab2" class="tab_content" style="display:none">
+					<table class="tablesorter" cellspacing="0"> 
+						<thead> 
+							<tr> 
+								<th></th> 
+								<th>Comment</th> 
+								<th>Posted by</th> 
+								<th>Posted On</th> 
+								<th>Actions</th> 
+							</tr> 
+						</thead> 
+						<tbody> 
+							<tr> 
+								<td><input type="checkbox"></td> 
+								<td>Lorem Ipsum Dolor Sit Amet</td> 
+								<td>Mark Corrigan</td> 
+								<td>5th April 2011</td> 
+								<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+							</tr> 
+							<tr> 
+								<td><input type="checkbox"></td> 
+								<td>Ipsum Lorem Dolor Sit Amet</td> 
+								<td>Jeremy Usbourne</td> 
+								<td>6th April 2011</td> 
+								<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+							</tr>
+							<tr> 
+								<td><input type="checkbox"></td> 
+								<td>Sit Amet Dolor Ipsum</td> 
+								<td>Super Hans</td> 
+								<td>10th April 2011</td> 
+								<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+							</tr> 
+							<tr> 
+								<td><input type="checkbox"></td> 
+								<td>Dolor Lorem Amet</td> 
+								<td>Alan Johnson</td> 
+								<td>16th April 2011</td> 
+								<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+							</tr> 
+							<tr> 
+								<td><input type="checkbox"></td> 
+								<td>Dolor Lorem Amet</td> 
+								<td>Dobby</td> 
+								<td>16th April 2011</td> 
+								<td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+							</tr> 
+						</tbody> 
+					</table>
+				</div><!-- end of #tab2 -->
+			</div><!-- end of .tab_container -->
+		</article>
 
-				<div class="single-cp">
-					<img src="images/shazi.jpg" class="cp-pic">
-					<h4 class="name">沙子名称</h4>
-					<ul class="inline-block-ul gray cp-info">
-						<li>规格：吨</li>
-						<li>品牌：山河</li>
-					</ul>
-					<h5 class="price">￥ 10</h5>
-					<ul class="clearfix count-ul">
-		              <li class="minus">-</li>
-		              <li class="count"><input type="tel" value="0" class="input-noborder" ng-model="exp"></li>
-		              <li class="plus">+</li>
-		          </ul>
-				</div>
-
-				<div class="single-cp">
-					<img src="images/shazi.jpg" class="cp-pic">
-					<h4 class="name">沙子名称</h4>
-					<ul class="inline-block-ul gray cp-info">
-						<li>规格：吨</li>
-						<li>品牌：山河</li>
-					</ul>
-					<h5 class="price">￥ 10</h5>
-					<ul class="clearfix count-ul">
-		              <li class="minus">-</li>
-		              <li class="count"><input type="tel" value="0" class="input-noborder" ng-model="exp"></li>
-		              <li class="plus">+</li>
-		          </ul>
-				</div>
-
-				<div class="single-cp">
-					<img src="images/shazi.jpg" class="cp-pic">
-					<h4 class="name">沙子名称</h4>
-					<ul class="inline-block-ul gray cp-info">
-						<li>规格：吨</li>
-						<li>品牌：山河</li>
-					</ul>
-					<h5 class="price">￥ 10</h5>
-					<ul class="clearfix count-ul">
-		              <li class="minus">-</li>
-		              <li class="count"><input type="tel" value="0" class="input-noborder" ng-model="exp"></li>
-		              <li class="plus">+</li>
-		          </ul>
-				</div>
-			</div>
-		</article><!-- end of stats article -->
-
-		<div class="position-fix-bottom-bar">
-			<span class="white-color">已选中 <span class="green-color">10</span> 件商品，立即</span><a class="button blue" href="javascript:void(0)">提交订单</a>
-		</div>
 
 	</section>
 	<script src="scripts/libs/require/require.js" type="text/javascript" data-main="scripts/app/index/main"></script>

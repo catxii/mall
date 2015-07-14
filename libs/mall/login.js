@@ -13,7 +13,7 @@ $(function(){
 		console.log('url:'+ prefix);
 		
 		$.ajax({
-	            url: prefix + '/customer/ajaxCustomerLogin',
+	            url: prefix + '/customer/ajaxCustomerLogin/',
 	            type: 'POST',
 	            dataType: "json",
 	            data:{'username':username,'password':password},

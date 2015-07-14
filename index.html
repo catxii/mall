@@ -108,20 +108,20 @@
 
 <div class="wrapper">
 <div class="login">
-	<dl class="login-from" style="display:none;">
+	<dl class="login-from" >
     	<dt>登陆云包公</dt>
         <dd><input type="text" class="username" value="用户名" onBlur="if(this.value=='') this.value='用户名';" onFocus="if(this.value=='用户名') this.value='';" /></dd>
         <dd><input type="text" class="password" value="密&nbsp;&nbsp;&nbsp;&nbsp;码" onBlur="if(this.value=='') this.value='密&nbsp;&nbsp;&nbsp;&nbsp;码';" onFocus="if(this.value=='密&nbsp;&nbsp;&nbsp;&nbsp;码') this.value='';" /></dd>
         <!-- <dd><input type="text" class="fl yzm" /><img src="company/images/yzm.jpg" class="fl" /></dd> -->
         <dd>
-        	<input type="button" class="dl" value="登&nbsp;&nbsp;录" />
+        	<input type="button" class="dl" value="登&nbsp;&nbsp;录" onclick="location.href='mall-index.html'"/>
         	<!-- <a href="" class="shenq">申请开通>></a> -->
         </dd>
         
     </dl>
 
 
-    <ul class="user-info">
+    <ul class="user-info" style="display:none;">
         <li>欢迎使用云包公，<a href="#" class="orange-color">猫XII</a></li>
         <li><a class="orange-color" href="mall-index.html">进入商城</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="gray-color" href="javascript:void(0)">[退出]</a></li>
     </ul>

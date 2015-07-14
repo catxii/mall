@@ -1,1 +1,0 @@
-define(["shortcutView","menuModel","menuListView"],function(e,t,n){var r=function(){e.allNeed(),n.setListDelete()};return{initialize:r}});

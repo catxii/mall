@@ -216,10 +216,11 @@ margin: 0 5px;
 
 aside#sidebar {
 width: 23%;
-background: #E0E0E3 url(../images/sidebar.png) repeat;
-float: left;
-min-height: 500px;
-margin-top: -4px;
+background:#e0e0e3;
+position: fixed;
+top: 88px;
+bottom: 0;
+left: 0;
 }
 
 #sidebar hr {
@@ -440,10 +441,12 @@ margin-top: 20%;
 
 
 section#main {
-width: 77%;
-min-height: 500px;
-float: left;
-margin-top: -2px
+	position: fixed;
+	width: 77%;
+	right: 0;
+	bottom: 0;
+	top: 88px;
+	overflow-y:auto; 
 }
 .main_shadow{
 background: url(../images/sidebar_shadow.png) repeat-y left top;

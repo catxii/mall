@@ -1,5 +1,5 @@
 $(function(){
-	var prefix = 'http://ybgplatform.com';
+	var prefix = 'http://testwuhan.ybgplatform.com';
 	$("#loginBtn").on('click', function() {
 		var username = $("#txtUser").val();
 		var password = $("#txtPwd").val();

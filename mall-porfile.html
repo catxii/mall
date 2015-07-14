@@ -47,7 +47,7 @@
 		</footer>
 	</aside><!-- end of sidebar -->
 	<section id="main" class="column main_shadow">
-		<h4 class="alert_info">请输入您的默认收货地址</h4>
+		<h4 class="alert_info">修改个人信息请联系云包公客服，服务电话：0731-XXXXXXX</h4>
 		<article class="module width_full">
 			<div class="module_content w500">
 
@@ -68,32 +68,51 @@
 				</div> -->
 			</div>
 		</article>
-		<article class="module width_full">
-			<div class="module_content w500">
+		<article class="module width_full" style="margin-bottom:20px;">
+			<header>
+				<h3 class="tabs_involved">收货地址管理</h3>
+			</header>
 
-				<fieldset>
-					<label for="txtName">收货地址</label>
-					<div style="clear:both;">
-						<select style="width:40%;">
-							<option>武汉</option>
-							<option>长沙</option>
-						</select>
-						<select style="width:40%;">
-							<option>白石区</option>
-							<option>白石区</option>
-							<option>白石区</option>
-							<option>白石区</option>
-							<option>白石区</option>
-							<option>白石区</option>
-						</select>
-					</div>
-					<label for="txtModule" style="margin-top:10px;">详细地址</label>
-					<input type="text" id="txtModule" value="" placeholder="请输入您的地址">
-				</fieldset>
-				<div class="tc mt20">
-					<a href="javascript:void(0)" class="button green" id="btnAdd">保存</a>
-				</div>
-			</div>
+			<div class="tab_container">
+				<div id="tab1" class="tab_content">
+					<table class="tablesorter" cellspacing="0"> 
+					<thead> 
+						<tr> 
+							<th>所在工地</th> 
+							<th>所在城市</th> 
+							<th>所在区域</th> 
+							<th>详细地址</th> 
+							<th>操作</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr> 
+							<td>白石工地</td> 
+							<td>武汉</td> 
+							<td>白石区</td> 
+							<td>新谷路山水嘉园12栋</td> 
+							<td><input type="image" src="images/icn_edit.png" title="Edit" onclick="window.open('mall-edit-address.html')"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+						</tr> 
+						<tr> 
+							<td>黑市工地</td> 
+							<td>武汉</td> 
+							<td>黑市区</td> 
+							<td>新谷路山水嘉园12栋</td> 
+							<td><input type="image" src="images/icn_edit.png" title="Edit" onclick="window.open('mall-edit-address.html')"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+						</tr> 
+						<tr> 
+							<td>白石工地</td> 
+							<td>武汉</td> 
+							<td>白石区</td> 
+							<td>新谷路山水嘉园12栋</td> 
+							<td><input type="image" src="images/icn_edit.png" title="Edit" onclick="window.open('mall-edit-address.html')"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+						</tr> 
+						
+					</tbody> 
+					</table>
+				</div><!-- end of #tab1 -->
+				
+			</div><!-- end of .tab_container -->
 		</article>
 
 

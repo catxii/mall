@@ -1,14 +1,91 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Bootstrap 101 Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="libs/jquery/jquery1.9.min.js"></script>
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-  </body>
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"/>
+	<title>云包公商城</title>
+	<link rel="stylesheet" href="styles/style.css" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="styles/style-mall.css">
+	<style>
+		.ms-controller {
+			visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<hgroup>
+			<h1 class="site_title"><a href="index.html">云包公商城</a></h1>
+			 
+		</hgroup>
+	</header> <!-- end of header bar -->
+	<section id="secondary_bar">
+		<div class="user">
+			<p>猫XII</p>
+			<!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
+		</div>
+	</section><!-- end of secondary bar -->
+	<aside id="sidebar" class="column">
+		<form class="quick_search">
+			<input type="text" value="Quick Search" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;">
+		</form>
+		<hr/>
+		<h3>我的面板</h3>
+		<ul class="toggle">
+			<li><font class="ficomoon icon-menu"></font><a href="mall-index.html">商城首页</a></li>
+			<li><font class="ficomoon icon-admin"></font><a href="mall-porfile.html">个人信息</a></li>
+			<li><font class="ficomoon icon-bbs"></font><a href="mall-order.html#">我的订单</a></li>
+			<li><font class="ficomoon icon-pwd"></font><a href="mall-password.html">修改密码</a></li>
+			<li><font class="ficomoon icon-logout"></font><a href="#">退出</a></li>
+		</ul>
+		
+		<footer>
+			<hr />
+			<p><strong>Copyright &copy; 2014 Pwstrick</strong></p>
+		</footer>
+	</aside><!-- end of sidebar -->
+	<section id="main" class="column main_shadow" ms-controller="productCtrl" class="ms-controller">
+		<h4 class="alert_info">请输入商品数量，点击底部购买按钮提交订单.</h4>
+		<article class="module width_full">
+			<header>
+				<h3 style="width:auto;">商品列表</h3>
+				<div class="submit_link">
+					<select>
+						<option>请选择收货地址</option>
+						<option>武汉-白石区-新谷路扬帆小区1211号</option>
+						<option>武汉-黑市区-新谷路扬帆小区1211号</option>
+					</select>
+					<input class="alt_btn" type="submit" value="管理收货地址" onclick="window.open('mall-porfile.html')">
+				</div>
+
+			</header>
+			<div class="cp-list clearfix">
+				
+				<div class="single-cp"  ms-repeat="products">
+					<img ms-src="el.image" class="cp-pic">
+					<h4 class="name">{{el.name}}</h4>
+					<ul class="inline-block-ul gray cp-info">
+						<li>规格：{{el.unit}}</li>
+						<li>品牌：{{el.brand}}</li>
+					</ul>
+					<h5 class="price">￥ {{el.price}}</h5>
+					<ul class="clearfix count-ul">
+		              <li class="minus" ms-click="delCount(el)">-</li>
+		              <li class="count"><input type="tel" ms-duplex="el.count" class="input-noborder"></li>
+		              <li class="plus" ms-click="addCount(el)">+</li>
+		          </ul>
+				</div>
+			</div>
+		</article><!-- end of stats article -->
+
+		<div class="position-fix-bottom-bar" ms-controller="cartCtrl">
+			<div class="position-left white-color"><label><input type="checkbox"> 只看已选商品</label></div>
+			<span class="white-color">已选中 <span class="green-color">{{products.size()}}</span> 件商品，立即</span><a class="button blue" href="javascript:void(0)">提交订单</a>
+		</div>
+
+	</section>
+	
+	<script type="text/javascript" src="libs/jquery/jquery1.9.min.js" ></script>
+	<script type="text/javascript" src="libs/avalon/avalon.js" ></script>
+	<script type="text/javascript" src="libs/mall/product.js" ></script>
+</body>
 </html>
